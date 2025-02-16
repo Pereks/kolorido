@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kolorido Jewelry</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header id="header">
+    <!-- Header Top: Always visible logo line and icons -->
+    <div class="header-top">
+      <!-- Hamburger (for mobile) -->
+      <div class="header-left">
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <!-- Logo (center) -->
+      <div class="header-center">
+        <a href="#">
+          <img src="images/logo.jpeg" alt="Kolorido Jewelry" class="header-logo" />
+        </a>
+      </div>
+      <!-- Social & Other Icons -->
+      <div class="header-right">
+        <a href="#" class="account-link" aria-label="Login"><i class="fas fa-user"></i></a>
+        <a href="#" class="search-toggle" aria-label="Open/Close Search"><i class="fas fa-search"></i></a>
+        <a href="#" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="cart-link" aria-label="Cart"><i class="fas fa-shopping-bag"></i><span class="cart-count">0</span></a>
+      </div>
+    </div>
+    <!-- Header Menu: Navigation -->
+    <div class="header-menu">
+      <nav>
+        <!-- Close button for mobile -->
+        <button class="close-menu" aria-label="Close Menu">✖</button>
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About Us</a></li>
+          <li><a href="#products" class="nav-link">What's New</a></li>
+          <li class="has-dropdown">
+            <a href="#categories" class="nav-link">Categories <i class="fas fa-caret-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="#rings">rings</a></li>
+              <li><a href="#earrings">earrings</a></li>
+              <li><a href="#bracelets">bracelets</a></li>
+              <li><a href="#headbands">headbands</a></li>
+              <li><a href="#necklaces">necklaces</a></li>
+            </ul>
+          </li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- Expanded Search Section -->
+    <div class="expanded-search">
+      <button class="expanded-search-close" aria-label="Close Search">&times;</button>
+      <div class="expanded-search-content">
+        <div class="expanded-search-box">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Search for any products and/or material" />
+        </div>
+        <div class="popular-searches">
+          <h4>Popular Searches</h4>
+          <ul>
+            <li><a href="#">diamond</a></li>
+            <li><a href="#">dome</a></li>
+            <li><a href="#">charlotte</a></li>
+            <li><a href="#">croissant</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- Hero Slideshow -->
+    <section id="home" class="hero-slideshow">
+      <ul class="slides">
+        <li class="slide" data-href="https://example.com/rings" style="background-image: url('images/hero-slide1.jpeg');" title="Explore rings"></li>
+        <li class="slide" data-href="https://example.com/earrings" style="background-image: url('images/hero-slide2.jpeg');" title="Explore earrings"></li>
+        <li class="slide" data-href="https://example.com/bracelets" style="background-image: url('images/hero-slide3.jpeg');" title="Explore bracelets"></li>
+      </ul>
+      <button class="slide-arrow left-arrow"><i class="fas fa-chevron-left"></i></button>
+      <button class="slide-arrow right-arrow"><i class="fas fa-chevron-right"></i></button>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container about">
+      <h2>About Us</h2>
+      <p>At Kolorido, our jewelry is designed and crafted with love and precision. We use only the finest materials...</p>
+    </section>
+
+    <!-- What's New Section (Full-width, no framing lines, centered heading) -->
+    <section id="products" class="products">
+      <h2>What's New</h2>
+      <div class="product-grid">
+        <a href="product1.html" class="product-item">
+          <div class="product-image-container">
+            <img src="images/product1.jpeg" alt="Product 1" />
+            <div class="product-title-overlay">Product 1</div>
+          </div>
+        </a>
+        <a href="product2.html" class="product-item">
+          <div class="product-image-container">
+            <img src="images/product2.jpeg" alt="Product 2" />
+            <div class="product-title-overlay">Product 2</div>
+          </div>
+        </a>
+        <a href="product3.html" class="product-item">
+          <div class="product-image-container">
+            <img src="images/product3.jpeg" alt="Product 3" />
+            <div class="product-title-overlay">Product 3</div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Categories Section (Grid: 3 columns desktop; 1 per view mobile) -->
+    <section id="categories" class="container categories">
+      <h2>Shop by Category</h2>
+      <div class="category-grid">
+        <div class="category-item">
+          <img src="images/rings.jpeg" alt="rings" />
+          <div class="category-overlay"><span>rings</span></div>
+        </div>
+        <div class="category-item">
+          <img src="images/earrings.jpeg" alt="earrings" />
+          <div class="category-overlay"><span>earrings</span></div>
+        </div>
+        <div class="category-item">
+          <img src="images/bracelets.jpeg" alt="bracelets" />
+          <div class="category-overlay"><span>bracelets</span></div>
+        </div>
+        <div class="category-item">
+          <img src="images/headbands.jpeg" alt="headbands" />
+          <div class="category-overlay"><span>headbands</span></div>
+        </div>
+        <div class="category-item">
+          <img src="images/necklaces.jpeg" alt="necklaces" />
+          <div class="category-overlay"><span>necklaces</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="container gallery">
+      <h2>Gallery</h2>
+      <div class="gallery-wrapper">
+        <button class="gallery-arrow left-arrow" id="gallery-left-arrow"><i class="fas fa-chevron-left"></i></button>
+        <div class="gallery-container">
+          <div class="gallery-items">
+            <img src="images/gallery1.jpeg" alt="Gallery 1" />
+            <img src="images/gallery2.jpeg" alt="Gallery 2" />
+            <img src="images/gallery3.jpeg" alt="Gallery 3" />
+          </div>
+        </div>
+        <button class="gallery-arrow right-arrow" id="gallery-right-arrow"><i class="fas fa-chevron-right"></i></button>
+      </div>
+      <button class="view-gallery grey-btn">View Full Gallery</button>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container contact">
+      <h2>Contact Us</h2>
+      <form id="contact-form">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" required></textarea><br>
+        <input class="grey-btn" type="submit" value="Submit">
+      </form>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#products">What's New</a>
+        <a href="#categories">Categories</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+      <p>&copy; 2024 Kolorido Jewelry. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" title="Back to top" class="grey-btn"><i class="fas fa-chevron-up"></i></button>
+
+  <script src="script.js"></script>
+</body>
+</html>
